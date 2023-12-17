@@ -1,0 +1,48 @@
+JFDML JFormDesigner: "8.2.0.0.331" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "酒店管理系统-管理员"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/res/images/hotel/x3.png" )
+			"$sizePolicy": 1
+			add( new FormContainer( "javax.swing.JDesktopPane", new FormLayoutManager( class javax.swing.JDesktopPane ) ) {
+				name: "desktopPane"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "backLabel"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/res/images/1473578777426.jpeg" )
+				}, new FormLayoutConstraints( null ) {
+					"x": 0
+					"y": 0
+					"width": 680
+					"height": 460
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormComponent( "javax.swing.JMenuItem" ) {
+					name: "menuItem1"
+					"text": "酒店客房"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem1", false ) )
+				} )
+				add( new FormComponent( "javax.swing.JMenuItem" ) {
+					name: "menuItem2"
+					"text": "酒店服务"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem2", false ) )
+				} )
+				add( new FormComponent( "javax.swing.JMenuItem" ) {
+					name: "menuItem7"
+					"text": "消费记录"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "payrecoding", true ) )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 25, 5 )
+			"size": new java.awt.Dimension( 685, 525 )
+		} )
+	}
+}
